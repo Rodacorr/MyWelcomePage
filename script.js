@@ -3,7 +3,7 @@ const initialProjects = [
     {
       id: 1,
       title: "Plataforma de E-commerce",
-      description: "Una solución completa de comercio electrónico construida con React y Node.js",
+      description: "Una solución completa de comercio electrónico construida con React",
       longDescription: "Esta plataforma de e-commerce ofrece una experiencia de compra fluida y responsive. Incluye gestión de inventario, carrito de compras, pasarela de pago segura y panel de administración para vendedores.",
       imageUrl: "https://via.placeholder.com/400x300",
       technologies: ["React"],
@@ -136,30 +136,30 @@ const initialProjects = [
     const newEmoji = {
       id: Date.now(),
       emoji: selectedEmoji,
-      x: Math.random() * 90 + 5, // Mantener los emojis alejados de los bordes
-      y: Math.random() * 90 + 5, // Mantener los emojis alejados de los bordes
+      x: Math.random() * 90 + 5, 
+      y: Math.random() * 90 + 5, 
     };
     
     emojis.push(newEmoji);
     localStorage.setItem('backgroundEmojis', JSON.stringify(emojis));
     
-    // Crear y añadir el nuevo emoji al contenedor
+
     const emojiElement = createEmojiElement(newEmoji);
     emojiContainer.appendChild(emojiElement);
   }
   
   function renderEmojis() {
-    // Limpiar el contenedor
+    
     emojiContainer.innerHTML = '';
     
-    // Renderizar cada emoji
+   
     emojis.forEach(emoji => {
       const emojiElement = createEmojiElement(emoji);
       emojiContainer.appendChild(emojiElement);
     });
   }
   
-  // Project Functions
+  
   function loadProjects() {
     projects = initialProjects;
     renderProjects();
@@ -170,13 +170,13 @@ const initialProjects = [
     projects.forEach(project => {
       const projectCard = projectTemplate.content.cloneNode(true);
       
-      // Fill in project details
+      
       projectCard.querySelector('.card-title').textContent = project.title;
       projectCard.querySelector('.card-description').textContent = project.description;
       projectCard.querySelector('.project-image').src = project.imageUrl;
       projectCard.querySelector('.long-description').textContent = project.longDescription;
       
-      // Technologies
+      
       const techContainer = projectCard.querySelector('.technologies');
       project.technologies.forEach(tech => {
         const badge = document.createElement('span');
@@ -185,17 +185,17 @@ const initialProjects = [
         techContainer.appendChild(badge);
       });
       
-      // Links
+      
       projectCard.querySelector('.demo-link').href = project.demoUrl;
       projectCard.querySelector('.github-link').href = project.githubUrl;
       
-      // Likes
+      
       const likeBtn = projectCard.querySelector('.like-button');
       const likesCount = projectCard.querySelector('.likes-count');
       likesCount.textContent = project.likes;
       likeBtn.onclick = () => handleLike(project.id);
       
-      // Comments
+      
       const commentsList = projectCard.querySelector('.comments-list');
       project.comments.forEach(comment => {
         const commentDiv = document.createElement('div');
@@ -207,7 +207,7 @@ const initialProjects = [
         commentsList.appendChild(commentDiv);
       });
       
-      // Comment form
+      
       const commentForm = projectCard.querySelector('.comment-form');
       commentForm.onsubmit = (e) => {
         e.preventDefault();
@@ -247,7 +247,7 @@ const initialProjects = [
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     const savedTheme = localStorage.getItem('theme');
 
-    // Set initial theme based on saved preference or system preference
+    
     if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
         document.documentElement.classList.add('dark');
     }
@@ -258,5 +258,5 @@ const initialProjects = [
     });
   }
   
-  // Initialize the application
+  
   document.addEventListener('DOMContentLoaded', init);
