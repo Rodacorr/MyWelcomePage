@@ -360,7 +360,7 @@
   .social-link {
       display: flex;
       align-items: center;
-      gap: 0.5rem;
+      gap: 0.7rem;
       text-decoration: none;
       color: var(--foreground);
       padding: 0.5rem 1rem;
