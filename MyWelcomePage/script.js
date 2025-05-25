@@ -17,7 +17,7 @@ const initialProjects = [
     },
     {
       id: 2,
-      title: "Weather Application",
+      title: "Second Project",
       description: "A weather application using React and OpenWeatherMap API",
       longDescription: "This application provides accurate and up-to-date weather forecasts. Offers interactive visualizations, weather alerts, and the ability to save favorite locations.",
       imageUrl: "https://via.placeholder.com/400x300",
