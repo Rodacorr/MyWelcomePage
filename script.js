@@ -30,6 +30,21 @@ const initialProjects = [
         { id: 2, author: "John Perez", text: "Loved how the system handles concurrency. Even with multiple users accessing the data, everything ran smoothly. Great learning tool for enterprise-level architecture!" },
       ],
     },
+    {
+      id: 3,
+      title: "Fashion design academy",
+      description: "The system follows a client-server architecture, where clients use a graphical user interface to connect to a central server via Java RMI. ",
+      longDescription: "The system follows a client-server architecture, where clients use a graphical user interface to connect to a central server via Java RMI. It allows staff to register students (including scholarship information), manage course inscriptions, track grades, generate academic histories, and back up all system data. Persistence is handled via serialized binary files, with data recovery at startup. The project focuses on real-world application design, covering all stages from UML modeling to a fully functional Java implementation.",
+      imageUrl: "./images/JavaFashion.png",
+      technologies: ["Java", "RMI", "UML", "Serialization", "GUI"],
+      demoUrl: "https://github.com/Rodacorr/FashionDesignAcademy",
+      githubUrl: "https://github.com/Rodacorr/FashionDesignAcademy",
+      likes: 10,
+      comments: [
+        { id: 1, author: "Camila Roman", text: "Very practical system! The GUI is user-friendly and works seamlessly over the network. Great experience managing course data." },
+        { id: 2, author: "Javier Larrique", text: "Loved how the system handles concurrency. Even with multiple users accessing the data, everything ran smoothly. Great learning tool for enterprise-level architecture!" },
+      ],
+    },
   ];
   
   const emojiOptions = ['😀', '😎', '🚀', '💻', '🎨', '🌟', '🔥', '👨‍💻', '👩‍💻', '🌈'];
