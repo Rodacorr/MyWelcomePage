@@ -18,16 +18,16 @@ const initialProjects = [
     {
       id: 2,
       title: "Second Project",
-      description: "A weather application using React and OpenWeatherMap API",
-      longDescription: "This application provides accurate and up-to-date weather forecasts. Offers interactive visualizations, weather alerts, and the ability to save favorite locations.",
+      description: "This project consists of developing a complete three-tier Java application for managing a notarial study’s database. The system supports data persistence through both a relational database (MySQL) and serialized files on disk, using patterns like DAO, Facade, MVC, and Abstract Factory. It includes concurrent access management through a connection pool and supports switching between persistence mechanisms via configuration files.",
+      longDescription: "This project simulates a notarial record management system, built in Java with a clean three-layer design. It supports two persistence modes—MySQL and serialized files—and uses design patterns like DAO, MVC, Facade, and Abstract Factory. Concurrency is handled with connection pools, and the system allows switching persistence modes without changing the core logic, thanks to external configuration.",
       imageUrl: "./images/weather-app.png",
-      technologies: ["React", "OpenWeatherMap API"],
-      demoUrl: "https://github.com/Rodacorr",
-      githubUrl: "https://github.com/Rodacorr",
+      technologies: ["Java", "MySQL", "MVC", "DAO", "Facade", "Abstract Factory", "Connection Pool"],
+      demoUrl: "https://github.com/gregueira/repository/tree/master",
+      githubUrl: "https://github.com/gregueira/repository/tree/master",
       likes: 8,
       comments: [
-        { id: 1, author: "Ann Martinez", text: "I love the clean design!" },
-        { id: 2, author: "John Perez", text: "How did you handle state management?" },
+        { id: 1, author: "Ann Martinez", text: "The dual persistence option is a game changer. I was able to switch from MySQL to file-based storage with zero hassle. Super intuitive CLI and solid performance!" },
+        { id: 2, author: "John Perez", text: "Loved how the system handles concurrency. Even with multiple users accessing the data, everything ran smoothly. Great learning tool for enterprise-level architecture!" },
       ],
     },
   ];
