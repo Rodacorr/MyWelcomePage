@@ -353,8 +353,9 @@
   
   .social-links {
       display: flex;
+      gap: 1rem;
       justify-content: center;
-      gap: 2rem;
+      margin-top: -3px;
   }
   
   .social-link {
