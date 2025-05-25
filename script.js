@@ -17,7 +17,7 @@ const initialProjects = [
     },
     {
       id: 2,
-      title: "Second Project",
+      title: "Notarial managing system",
       description: "This project consists of developing a complete three-tier Java application for managing a notarial study’s database. The system supports data persistence through both a relational database (MySQL) and serialized files on disk, using patterns like DAO, Facade, MVC, and Abstract Factory. It includes concurrent access management through a connection pool and supports switching between persistence mechanisms via configuration files.",
       longDescription: "This project simulates a notarial record management system, built in Java with a clean three-layer design. It supports two persistence modes—MySQL and serialized files—and uses design patterns like DAO, MVC, Facade, and Abstract Factory. Concurrency is handled with connection pools, and the system allows switching persistence modes without changing the core logic, thanks to external configuration.",
       imageUrl: "./images/weather-app.png",
