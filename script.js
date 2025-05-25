@@ -12,7 +12,7 @@ const initialProjects = [
       likes: 15,
       comments: [
         { id: 1, author: "Mary Garcia", text: "Excellent work! The interface is very intuitive." },
-        { id: 2, author: "John Perez", text: "How did you handle successions rules?" },
+        { id: 2, author: "Juan Perez", text: "How did you handle successions rules?" },
       ],
     },
     {
@@ -27,6 +27,7 @@ const initialProjects = [
       likes: 8,
       comments: [
         { id: 1, author: "Ann Martinez", text: "I love the clean design!" },
+        { id: 2, author: "John Perez", text: "How did you handle state management?" },
       ],
     },
   ];
