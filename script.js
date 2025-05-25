@@ -5,7 +5,7 @@ const initialProjects = [
       title: "RoyaltyUK",
       description: "Software system that simulates the line of succession to the throne of any royal family. This system allows users to experiment with different royal family structures and observe how the line of succession evolves dynamically as events unfold.",
       longDescription: "The simulator is developed in C++ and is operated through command-line interface (CLI) commands in the console. Once the program is running, users can register births, deaths, abdications, list the current line of succession, and simulate ascension to the throne by eligible heirs—all through a simple and clear text-based interface.",
-      imageUrl: "https://ik.imagekit.io/e5eeyroun/RoyaltyUKPhoto.png?updatedAt=1748211545929",
+      imageUrl: "https://i.ibb.co/YFrVgNk/RoyaltyUKPhoto.png",
       technologies: ["C++", "CLI"],
       demoUrl: "https://github.com/Rodacorr/RoyaltyUK",
       githubUrl: "https://github.com/Rodacorr/RoyaltyUK",
