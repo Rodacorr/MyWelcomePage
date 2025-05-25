@@ -2,31 +2,31 @@
 const initialProjects = [
     {
       id: 1,
-      title: "Plataforma de E-commerce",
-      description: "Una solución completa de comercio electrónico construida con React",
-      longDescription: "Esta plataforma de e-commerce ofrece una experiencia de compra fluida y responsive. Incluye gestión de inventario, carrito de compras, pasarela de pago segura y panel de administración para vendedores.",
+      title: "RoyaltyUK",
+      description: "Software system that simulates the line of succession to the throne of any royal family. This system allows users to experiment with different royal family structures and observe how the line of succession evolves dynamically as events unfold.",
+      longDescription: "The simulator is developed in C++ and is operated through command-line interface (CLI) commands in the console. Once the program is running, users can register births, deaths, abdications, list the current line of succession, and simulate ascension to the throne by eligible heirs—all through a simple and clear text-based interface.",
       imageUrl: "https://via.placeholder.com/400x300",
       technologies: ["React"],
       demoUrl: "https://github.com/Rodacorr",
       githubUrl: "https://github.com/Rodacorr",
       likes: 15,
       comments: [
-        { id: 1, author: "María García", text: "¡Excelente trabajo! La interfaz es muy intuitiva." },
-        { id: 2, author: "Juan Pérez", text: "¿Cómo manejaste la gestión del estado?" },
+        { id: 1, author: "Mary Garcia", text: "Excellent work! The interface is very intuitive." },
+        { id: 2, author: "John Perez", text: "How did you handle state management?" },
       ],
     },
     {
       id: 2,
-      title: "Aplicación del Clima",
-      description: "Una aplicación meteorológica utilizando React y la API de OpenWeatherMap",
-      longDescription: "Esta aplicación proporciona pronósticos meteorológicos precisos y actualizados. Ofrece visualizaciones interactivas, alertas meteorológicas y la capacidad de guardar ubicaciones favoritas.",
+      title: "Weather Application",
+      description: "A weather application using React and OpenWeatherMap API",
+      longDescription: "This application provides accurate and up-to-date weather forecasts. Offers interactive visualizations, weather alerts, and the ability to save favorite locations.",
       imageUrl: "https://via.placeholder.com/400x300",
       technologies: ["React", "OpenWeatherMap API"],
       demoUrl: "https://github.com/Rodacorr",
       githubUrl: "https://github.com/Rodacorr",
       likes: 8,
       comments: [
-        { id: 1, author: "Ana Martínez", text: "¡Me encanta el diseño limpio!" },
+        { id: 1, author: "Ann Martinez", text: "I love the clean design!" },
       ],
     },
   ];
@@ -94,7 +94,7 @@ const initialProjects = [
     // Toggle para expandir/colapsar
     header.addEventListener('click', () => {
         const isCollapsed = emojiSelector.classList.toggle('collapsed');
-        headerText.textContent = isCollapsed ? 'Expandir emojis' : 'Contraer emojis';
+        headerText.textContent = isCollapsed ? 'Expand emojis' : 'Collapse emojis';
     });
 
     addEmojiBtn.onclick = handleAddEmoji;
@@ -105,7 +105,7 @@ const initialProjects = [
     document.querySelectorAll('.emoji-button').forEach(btn => {
       btn.classList.toggle('selected', btn.textContent === emoji);
     });
-    addEmojiText.textContent = `Agregar ${emoji} al fondo`;
+    addEmojiText.textContent = `Add ${emoji} to background`;
   }
   
   function createEmojiElement(emoji) {
