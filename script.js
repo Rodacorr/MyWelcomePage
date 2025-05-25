@@ -2,7 +2,7 @@
 const initialProjects = [
     {
       id: 1,
-      title: "RoyaltyUK",
+      title: "Royalty UK",
       description: "Software system that simulates the line of succession to the throne of any royal family. This system allows users to experiment with different royal family structures and observe how the line of succession evolves dynamically as events unfold.",
       longDescription: "The simulator is developed in C++ and is operated through command-line interface (CLI) commands in the console. Once the program is running, users can register births, deaths, abdications, list the current line of succession, and simulate ascension to the throne by eligible heirs—all through a simple and clear text-based interface.",
       imageUrl: "./images/RoyaltyUKPhoto.png",
