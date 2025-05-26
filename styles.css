@@ -76,6 +76,14 @@
     font-size: 0.875rem;
     color: var(--muted-foreground);
   }
+
+  .presentation {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    text-align: center;
+    color: var(--muted-foreground);
+    font-weight: 500;
+  }
   
   /* Emoji Selector Styles */
   .emoji-selector {
