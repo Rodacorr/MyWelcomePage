@@ -47,7 +47,7 @@ const initialProjects = [
     },
   ];
   
-  const emojiOptions = ['😀', '😎', '🚀', '💻', '🎨', '🌟', '🔥', '👨‍💻', '👩‍💻', '🌈'];
+  const emojiOptions = ['😀', '😎', '🚀', '💻', '🎨', '🌟', '🔥', '👨‍💻', '👩‍💻', '🌈','❤️'];
   let selectedEmoji = emojiOptions[0];
   let projects = [];
   let emojis = [];
