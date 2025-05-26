@@ -139,10 +139,6 @@ const initialProjects = [
   }
   
   function setupEmojiSelector() {
-    const emojiSelector = document.querySelector('.emoji-selector');
-    const header = document.querySelector('.emoji-selector-header');
-    const headerText = document.querySelector('.emoji-selector-text');
-
     // Configure emojis
     emojiOptions.forEach(emoji => {
         const button = document.createElement('button');
@@ -184,7 +180,7 @@ const initialProjects = [
     
     div.style.opacity = '0';
     requestAnimationFrame(() => {
-      div.style.opacity = '1';
+      div.style.opacity = '0.1';
     });
     
     return div;
