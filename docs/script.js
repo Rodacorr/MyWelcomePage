@@ -70,6 +70,7 @@ const initialProjects = [
   // DOM Elements
   const emojiContainer = document.getElementById('emojiContainer');
   const emojiSelector = document.querySelector('.emoji-selector');
+  const emojiToggleBtn = document.querySelector('.emoji-toggle-btn');
   const header = document.querySelector('.emoji-selector-header');
   const headerText = document.querySelector('.emoji-selector-text');
   const addEmojiBtn = document.getElementById('addEmojiBtn');
@@ -145,7 +146,7 @@ const initialProjects = [
     // Configure emojis
     emojiOptions.forEach(emoji => {
         const button = document.createElement('button');
-        button.className = 'emoji-button';
+        button.className = 'emoji-option';
         button.textContent = emoji;
         button.onclick = () => selectEmoji(emoji);
         emojiSelector.querySelector('.emoji-options').appendChild(button);
@@ -162,7 +163,7 @@ const initialProjects = [
   
   function selectEmoji(emoji) {
     selectedEmoji = emoji;
-    document.querySelectorAll('.emoji-button').forEach(btn => {
+    document.querySelectorAll('.emoji-option').forEach(btn => {
       btn.classList.toggle('selected', btn.textContent === emoji);
     });
     addEmojiText.textContent = `Add ${emoji} to background`;
