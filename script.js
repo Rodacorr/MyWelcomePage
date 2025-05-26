@@ -45,6 +45,18 @@ const initialProjects = [
         { id: 2, author: "Javier Larrique", text: "Loved how the system handles concurrency. Even with multiple users accessing the data, everything ran smoothly. Great learning tool for enterprise-level architecture!" },
       ],
     },
+    {
+      id: 4,
+      title: "React Testing",
+      description: "This project is a simple landing page. It is built using HTML, CSS, JavaScript and React.",
+      longDescription: "This is a simple landing page that allows user to learn about a car mechanic garage. It is built using HTML, CSS, JavaScript and React. Using currently to learn about React and Implmenting it on a simple project.",
+      imageUrl: "./images/MPICorvette.png",
+      technologies: ["HTML", "CSS", "JavaScript", "React"],
+      demoUrl: "https://react-testing-omega-one.vercel.app/",
+      githubUrl: "https://github.com/Rodacorr/TestReact",
+      likes: 5,
+      
+    },
   ];
   
   const emojiOptions = ['😀', '😎', '🚀', '💻', '🎨', '🌟', '🔥', '👨‍💻', '👩‍💻', '🌈','❤️'];
