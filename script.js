@@ -52,7 +52,7 @@ const initialProjects = [
       longDescription: "This is a simple landing page that allows user to learn about a car mechanic garage. It is built using HTML, CSS, JavaScript and React. Using currently to learn about React and Implmenting it on a simple project.",
       imageUrl: "./images/MPICorvette.png",
       technologies: ["HTML", "CSS", "JavaScript", "React"],
-      demoUrl: "https://react-testing-omega-one.vercel.app/",
+      demoUrl: "https://rodacorr.github.io/TestReact",
       githubUrl: "https://github.com/Rodacorr/TestReact",
       likes: 5,
       
