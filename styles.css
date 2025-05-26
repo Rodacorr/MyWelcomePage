@@ -79,9 +79,9 @@
 
   .presentation {
     margin-top: 1rem;
-    font-size: 0.875rem;
+    font-size: 1rem;
     text-align: center;
-    color: black;
+    color: var(--primary-foreground);
     font-weight: 500;
     line-height: 1.5;
   }
