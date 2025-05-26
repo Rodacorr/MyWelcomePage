@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="min-h-screen bg-background text-foreground">
+        <!-- Emoji Background Container -->
+        <div id="emojiContainer" class="fixed inset-0 overflow-hidden pointer-events-none"></div>
+
+        <!-- Emoji Selector -->
+        <div class="emoji-selector collapsed">
+            <div class="emoji-selector-header">
+                <span class="emoji-selector-text">Expand emojis</span>
+                <button class="emoji-toggle-btn">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="emoji-selector-content">
+                <div class="emoji-options"></div>
+                <button id="addEmojiBtn" class="add-emoji-btn">
+                    <span class="icon-plus"></span>
+                    <span id="addEmojiText">Add 😀 to the background</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="theme-toggle">
+            <i class="fas fa-sun light-icon"></i>
+            <i class="fas fa-moon dark-icon"></i>
+        </button>
+
+        <!-- Main Content -->
+        <div class="container">
+            <header class="header">
+                <div class="avatar">
+                    <img src="./images/Yo.jpg" alt="Matias" class="avatar-image">
+                </div>
+                <h1>Matias Pirez</h1>
+                <p class="subtitle">IT Student</p>
+                <p class="instruction">Sellect an emoji from the bottom left of the screen and click "Add to background" to personalize your experience</p>
+                <p class="presentation">Matias is a dedicated software engineering student with hands-on experience in Java, C++, and
+                    Python, as well as a solid foundation in SQL and full-stack development. Currently in the final year
+                    of a bachelor’s program, Matías has worked on several object-oriented programming projects and
+                    is passionate about creating impactful software solutions. Skilled in collaborating with teams,
+                    Matías is eager to contribute his expertise to solve complex challenges and grow within a software
+                    development role. </p>
+            </header>
+
+            <main>
+                <h2>My Projects</h2>
+                <div id="projectsContainer" class="projects-grid"></div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Project Card Template -->
+    <template id="projectTemplate">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title"></h3>
+                <p class="card-description"></p>
+            </div>
+            <div class="card-content">
+                <img class="project-image" alt="Project Image">
+                <p class="long-description"></p>
+                <div class="technologies"></div>
+                <div class="project-links">
+                    <a class="demo-link" target="_blank">
+                        <span class="icon-external"></span>
+                        Demo
+                    </a>
+                    <a class="github-link" target="_blank">
+                        <span class="icon-external"></span>
+                        GitHub
+                    </a>
+                </div>
+                <button class="like-button">
+                    <span class="icon-heart"></span>
+                    <span class="likes-count"></span> ❤️ Like
+                </button>
+            </div>
+            <div class="card-footer">
+                <h4>Comments</h4>
+                <div class="comments-list"></div>
+                <div class="separator"></div>
+                <form class="comment-form">
+                    <textarea placeholder="Add a comment..." required></textarea>
+                    <button type="submit">
+                        <span class="icon-send"></span>
+                        Publish Comment
+                    </button>
+                </form>
+            </div>
+        </div>
+    </template>
+
+    <footer class="contact-section">
+        <h2>Contact</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/matias-pirez-schmand-1b91aa214/" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i>
+                LinkedIn
+            </a>
+            <a href="https://github.com/Rodacorr" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+                GitHub
+            </a>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/+59897407818" target="_blank" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">Contact me!</span>
+    </a>
+
+    <script src="./script.js"></script>
+</body>
+</html>
