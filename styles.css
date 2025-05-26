@@ -79,10 +79,11 @@
 
   .presentation {
     margin-top: 1rem;
-    font-size: 0.875rem;
+    font-size: 1.25rem;
     text-align: center;
-    color: var(--muted-foreground);
+    color: black;
     font-weight: 500;
+    line-height: 1.5;
   }
   
   /* Emoji Selector Styles */
