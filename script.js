@@ -7,8 +7,8 @@ const initialProjects = [
       longDescription: "The simulator is developed in C++ and is operated through command-line interface (CLI) commands in the console. Once the program is running, users can register births, deaths, abdications, list the current line of succession, and simulate ascension to the throne by eligible heirs—all through a simple and clear text-based interface.",
       imageUrl: "./images/RoyaltyUKPhoto.png",
       technologies: ["C++", "CLI"],
-      demoUrl: "https://github.com/Rodacorr/RoyaltyUK",
-      githubUrl: "https://github.com/Rodacorr/RoyaltyUK",
+      demoUrl: "https://github.com/Rodacorr/RealezaUK",
+      githubUrl: "https://github.com/Rodacorr/RealezaUK",
       likes: 15,
       comments: [
         { id: 1, author: "Mary Garcia", text: "Excellent work! The interface is very intuitive." },
