@@ -85,9 +85,41 @@ body {
 
 .presentation {
     color: var(--foreground);
-    line-height: 1.6;
-    margin: 1rem 0;
+    line-height: 1.8;
+    margin: 2rem auto;
     text-align: justify;
+    max-width: 800px;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+}
+
+.presentation ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 1rem 0;
+}
+
+.presentation li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.presentation li:before {
+    content: "•";
+    color: var(--primary);
+    position: absolute;
+    left: 0;
+    font-size: 1.2rem;
+}
+
+.presentation p {
+    margin-bottom: 1.5rem;
+}
+
+.presentation strong {
+    color: var(--primary);
+    font-weight: 600;
 }
 
 /* Theme Toggle Styles */
