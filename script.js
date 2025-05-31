@@ -180,7 +180,7 @@ const initialProjects = [
     
     div.style.opacity = '0';
     requestAnimationFrame(() => {
-      div.style.opacity = '0.1';
+      div.style.opacity = '0.3';
     });
     
     return div;
