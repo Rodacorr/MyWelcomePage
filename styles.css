@@ -487,3 +487,7 @@ body {
     }
 }
   
+/* Elastic overflow */
+:root{
+    overscroll-behavior-y: 1;
+}
