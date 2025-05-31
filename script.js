@@ -292,16 +292,31 @@ const initialProjects = [
   document.addEventListener('DOMContentLoaded', init);
 
   function checkScrollForBounce(){
-    const wHeigt = window.innerHeight;
-    const sHeigt = document.documentElement.scrollHeight;
+    const wHeight = window.innerHeight;
+    const sHeight = document.documentElement.scrollHeight;
     const sPosition = window.pageYOffset;
 
-    if (sPosition + wHeigt >= sHeigt - 100){
-      const elementToBounce = document.querySelector('.bounce-element');
-      elementToBounce.style.transform = 'translateY(-5px)';
-      setTimeout(() => {
-        elementToBounce.style.transform = 'translateY(0)';
-      }, 200);
+    // Get all elements with bounce class
+    const bounceElements = document.querySelectorAll('.bounce-element');
+
+    // Check for bottom bounce
+    if (sPosition + wHeight >= sHeight - 100) {
+      bounceElements.forEach(element => {
+        element.style.transform = 'translateY(-5px)';
+        setTimeout(() => {
+          element.style.transform = 'translateY(0)';
+        }, 200);
+      });
+    }
+    
+    // Check for top bounce
+    if (sPosition <= 100) {
+      bounceElements.forEach(element => {
+        element.style.transform = 'translateY(5px)';
+        setTimeout(() => {
+          element.style.transform = 'translateY(0)';
+        }, 200);
+      });
     }
   }
 
