@@ -297,7 +297,7 @@ const initialProjects = [
     const sPosition = window.pageYOffset;
 
     if (sPosition + wHeigt >= sHeigt - 100){
-      const elementToBounce = document.querySelector('.bounce-element'));
+      const elementToBounce = document.querySelector('.bounce-element');
       elementToBounce.style.transform = 'translateY(-5px)';
       setTimeout(() => {
         elementToBounce.style.transform = 'translateY(0)';
