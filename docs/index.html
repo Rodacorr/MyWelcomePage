@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="min-h-screen bg-background text-foreground">
+        <!-- Emoji Background Container -->
+        <div id="emojiContainer" class="fixed inset-0 overflow-hidden pointer-events-none"></div>
+
+        <!-- Emoji Selector -->
+        <div class="emoji-selector collapsed">
+            <div class="emoji-selector-header">
+                <span class="emoji-selector-text">Expand emojis</span>
+                <button class="emoji-toggle-btn">
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+            <div class="emoji-selector-content">
+                <div class="emoji-options"></div>
+                <button id="addEmojiBtn" class="add-emoji-btn">
+                    <i class="fas fa-plus"></i>
+                    <span id="addEmojiText">Add 😀 to the background</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Theme Toggle -->
+        <button id="themeToggle" class="theme-toggle">
+            <i class="fas fa-sun light-icon"></i>
+            <i class="fas fa-moon dark-icon"></i>
+        </button>
+
+        <!-- Main Content -->
+        <div class="container">
+            <header class="header">
+                <div class="avatar">
+                    <img src="images/Yo.jpg" alt="Matias" class="avatar-image">
+                </div>
+                <h1>Matias Pirez</h1>
+                <p class="subtitle">IT Student</p>
+                <p class="instruction">Select an emoji from the bottom left of the screen and click "Add to background" to personalize your experience</p>
+                <p class="presentation">
+Hi! I'm <strong>Matías Pirez</strong>, a software developer from Uruguay with a passion for turning complex problems into clean, maintainable code. Currently in the final year of my Systems degree, I've gained hands-on experience through real-world projects using Java, C++, Python, and full-stack technologies.<br />
+
+Along the way, I've built a variety of tools — from a royal succession simulator in C++ to a notarial management system in Java, as well as custom apps using Power Platform and Salesforce. These projects have helped me develop a strong approach to system design, algorithm efficiency, and user-centered thinking.<br />
+
+Through these experiences, I've learned how to tackle challenges by breaking problems down into manageable steps, writing code that's easy to understand and maintain, and designing systems that are both powerful and user-friendly. I've also grown comfortable collaborating with diverse teams and adapting quickly to new technologies and environments.<br />
+
+Whether I'm building an application from scratch or troubleshooting infrastructure issues, I thrive on challenges that help me grow as a developer. Feel free to explore my projects below — they represent not just what I've built, but everything I've learned along the way.</p>
+            </header>
+
+            <main>
+                <h2>My Projects</h2>
+                <div id="projectsContainer" class="projects-grid"></div>
+            </main>
+        </div>
+    </div>
+
+    <!-- Project Card Template -->
+    <template id="projectTemplate">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title"></h3>
+                <p class="card-description"></p>
+            </div>
+            <div class="card-content">
+                <img class="project-image" alt="Project Image">
+                <p class="long-description"></p>
+                <div class="technologies"></div>
+                <div class="project-links">
+                    <a class="demo-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        Demo
+                    </a>
+                    <a class="github-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        GitHub
+                    </a>
+                </div>
+                <button class="like-button">
+                    <i class="fas fa-heart"></i>
+                    <span class="likes-count"></span> Like
+                </button>
+            </div>
+            <div class="card-footer">
+                <h4>Comments</h4>
+                <div class="comments-list"></div>
+                <div class="separator"></div>
+                <form class="comment-form">
+                    <textarea placeholder="Add a comment..." required></textarea>
+                    <button type="submit">
+                        <i class="fas fa-paper-plane"></i>
+                        Publish Comment
+                    </button>
+                </form>
+            </div>
+        </div>
+    </template>
+
+    <footer class="contact-section">
+        <h2>Contact</h2>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/matias-pirez-schmand-1b91aa214/" target="_blank" class="social-link">
+                <i class="fab fa-linkedin"></i>
+                LinkedIn
+            </a>
+            <a href="https://github.com/Rodacorr" target="_blank" class="social-link">
+                <i class="fab fa-github"></i>
+                GitHub
+            </a>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/+59897407818" target="_blank" class="whatsapp-button">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-text">Contact me!</span>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
