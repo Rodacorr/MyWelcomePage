@@ -288,6 +288,7 @@ const initialProjects = [
     }
   }
   
+  /*
   // Initialize the application
   document.addEventListener('DOMContentLoaded', init);
 
@@ -306,3 +307,4 @@ const initialProjects = [
   }
 
   window.addEventListener('scroll', checkScrollForBounce);
+  */
