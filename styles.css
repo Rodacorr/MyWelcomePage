@@ -486,8 +486,8 @@ body {
         padding: 1rem 1.5rem;
     }
 }
-  
+
 /* Elastic overflow */
 :root{
-    overscroll-behavior-y: 1;
+    overscroll-behavior: none;
 }

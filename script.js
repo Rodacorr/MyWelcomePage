@@ -290,3 +290,19 @@ const initialProjects = [
   
   // Initialize the application
   document.addEventListener('DOMContentLoaded', init);
+
+  function checkScrollForBounce(){
+    const wHeigt = window.innerHeight;
+    const sHeigt = document.documentElement.scrollHeight;
+    const sPosition = window.pageYOffset;
+
+    if (sPosition + wHeigt >= sHeigt - 100){
+      const elementToBounce = document.querySelector('.bounce-element'));
+      elementToBounce.style.transform = 'translateY(-5px)';
+      setTimeout(() => {
+        elementToBounce.style.transform = 'translateY(0)';
+      }, 200);
+    }
+  }
+
+  window.addEventListener('scroll', checkScrollForBounce);
