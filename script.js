@@ -171,7 +171,7 @@ const initialProjects = [
     div.textContent = emoji.emoji;
     
     div.style.position = 'absolute';
-    div.style.fontSize = '2rem';
+    div.style.fontSize = '32px';
     div.style.userSelect = 'none';
     div.style.transition = 'opacity 0.3s ease-in-out';
     
