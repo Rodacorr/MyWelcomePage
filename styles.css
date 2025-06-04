@@ -262,7 +262,7 @@ body {
 
 .emoji-element {
     position: absolute;
-    font-size: 2rem;
+    font-size: 32px;
     user-select: none;
     opacity: 0.1;
     transition: opacity 0.3s ease-in-out;
@@ -272,7 +272,7 @@ body {
 /* Projects Grid */
 .projects-grid {
     display: grid;
-    gap: 2rem;
+    gap: 32px;
     grid-template-columns: 1fr;
 }
 
@@ -298,7 +298,7 @@ body {
 }
 
 .card-header {
-    padding: 1.5rem;
+    padding: 24px;
 }
 
 .card-title {
@@ -314,7 +314,7 @@ body {
 }
 
 .card-content {
-    padding: 1.5rem;
+    padding: 24px;
 }
 
 .project-image {
